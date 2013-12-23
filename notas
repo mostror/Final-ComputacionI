@@ -1,0 +1,55 @@
+/***************************/
+TABLAS:
+pelicula:
+	-titulo
+	-anio
+	-director
+	-escritor
+	-productor
+	-origen
+	-lenguage
+
+persona:
+	-nombre
+	-nacimiento
+	-origen
+
+relaciones:
+	-pelicula
+	-persona
+	-tipo (1 director, 2 escritor, 3 productor, 4 actor)
+	-personajeId
+	-PersonajeDesc
+
+
+
+
+
+
+votos:
+	-pelicula
+	-user
+	-puntaje
+user:
+	-id
+	-username
+	-pass
+	-admin
+
+
+
+
+/***************************/
+scanf de mas de una palabra: scanf("%10[^\n]", mem);
+
+
+
+/***************************/
+insert doble:
+INSERT INTO `MDb`.`users` (
+`id` ,
+`username` ,
+`pass` ,
+`admin`
+)
+VALUES (NULL , 'wako', PASSWORD( '1234' ) , '2'), (NULL , 'tutu', PASSWORD( '1234' ) , '2');
